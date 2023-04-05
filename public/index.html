@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -67,9 +66,7 @@
 </body>
 
 <div class="container">
-
     <section class="starter-template">
-
         <h1>Sariska Player</h1>
         <p class="lead">Sariska Player is a video player which lets you test live streams for the following protocols
                 <br>
@@ -78,13 +75,14 @@
                 3. RTMP
                 4. FLV
         </p>
-
-        
-
+        <link href="./index.css" rel="stylesheet">
+        <div id="root"></div>
+        <br>
+        <form id=load-url>
+          <label> Video URL: <input id=url type=url value=""> </label> <br>
+          <button type=submit>Load</button>
+        </form>
     </section>
-    <link href="./index.css" rel="stylesheet">
-    <div id="root"></div>
 </div>
-
 </html>
 
