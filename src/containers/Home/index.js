@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Box, Typography, Radio, RadioGroup, FormControlLabel, Input } from "@mui/material";
+import { Box, Typography, Radio, RadioGroup, FormControlLabel, Input, Divider } from "@mui/material";
 import VideoPlayer from '../../VideoPlayer';
 import { colors } from "../../assets/styles/_color";
 import { SYNE } from "../../constants";
@@ -40,30 +40,35 @@ const Home = () => {
     return (
         <ExtendedContainer padding={'2.5rem 7.5rem'}>
             <CentralContainer>
-                <Typography
-                    component="h5"
-                    sx={theme => ({
-                        color: colors.primary,
-                        fontSize: "32px",
-                        fontFamily: SYNE,
-                        [theme.breakpoints.between(900, 1355)]: {
-                            fontSize: '24px'
-                        },
-                        [theme.breakpoints.down('md')]: {
-                            fontSize: '18px'
-                        }
-                    })}
-                >
-                    <strong>
-                        Test Your Live Streams with Sariska Player
-                    </strong>
-                </Typography>
+                <Box sx={{ padding: "20px" }}>
+                    <Typography
+                        component="h1"
+                        sx={theme => ({
+                            color: colors.primary,
+                            fontSize: "32px",
+                            fontFamily: SYNE,
+                            [theme.breakpoints.between(900, 1355)]: {
+                                fontSize: '24px'
+                            },
+                            [theme.breakpoints.down('md')]: {
+                                fontSize: '18px'
+                            }
+                        })}
+                    >
+                        <strong>
+                            Test Your Live Streams with Sariska Player
+                        </strong>
+                    </Typography>
+                </Box>
+                <div style={{ marginTop: '16px', marginBottom: '16px' }}>
+                    <Divider />
+                </div>
                 <VideoPlayer key={videoType + url} url={url || getDefaultValue()} type={videoType} />
                 <Box
                     border={1}
                     borderRadius={2}
                     width="100%"
-                    marginTop={"10px"}
+                    marginTop={"20px"}
                     p={2}
                     boxSizing="border-box"
                 >
