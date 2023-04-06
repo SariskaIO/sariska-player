@@ -1,0 +1,49 @@
+body {
+  padding-top: 50px;
+  color: #000000;
+  background-color: #FAFCFF;
+  font-family: "DM Sans", sans-serif;
+}
+
+nav {
+  background-color: #E3E8FF;
+}
+
+nav a {
+  color: #000000;
+  font-family: "DM Sans", sans-serif;
+}
+
+nav a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.video-js {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.starter-template h1 {
+  font-size: 48px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.starter-template p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-family: "DM Sans", sans-serif;
+}
